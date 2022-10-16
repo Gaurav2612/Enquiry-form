@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}
+    <title>Eshop | Login</title>
+{% endblock %}
+
+{% block body %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-12 ">
+                <img src="{% static 'images/login.jpg' %}" class="w-100 rounded-circle">
+            </div>
+            <div class="col-md-6 col-sm-12 col-12"><br>
+                <h5 class="background text-light p-2 text-center">Login Section</h5>
+                <form>
+                    <div class="mb-3">
+                      <label for="username" class="form-label">User Name</label>
+                      <input type="username" class="form-control" id="exampleInputEmail1" placeholder="Enter your user name">
+                     
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password">
+                    </div><br>
+                    
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                    <a href="/signup" class="text-decoration-none">New User?Create an Account</a>
+                  </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
